@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+
+  font-family: sans-serif;
+
+  text-decoration: none;
+  list-style: none;
+
+  letter-spacing: 1px;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #1b1b1b;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color:#273647;
+  color: rgb(247, 238, 238);
+  font-size: 16px;
+  cursor: pointer;
+  font-family: cairo;
+  font-weight: bold;
+}
+
+
+.button:hover {
+  background-color: #c37932;
+}
+
+.button svg {
+  margin-right: 5px;
+}
+
+.container .box img {
+  width: auto; /* تعديل عرض الصورة لتمتد على عرض العنصر */
+  height: auto; /* تعديل ارتفاع الصورة بناءً على العرض المحدد */
+  border-radius: 5px;
+}
+.not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.not-found-title {
+  font-size: 36px;
+  color: #ff0000;
+}
+
+.not-found-message {
+  font-size: 18px;
+  color: #333333;
+}
+
+.logo {
+  display: block;
+  margin-left: 50px;
+  width: 180px; 
+  height: 90px; 
+  border-radius: 5px;
+}
+
+.main-Link.active {
+  background-color: teal;
+  color: white;
+  border: 2px solid teal;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.main-Link.active:hover {
+  background-color: #006d6d;
+}
