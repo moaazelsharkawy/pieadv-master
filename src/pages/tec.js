@@ -1,18 +1,22 @@
 import React from "react";
 import Header from "../comp/header";
-import Footer from '../comp/footer';
+import Footer from "../comp/footer";
 import MainContent from "../comp/maincontent";
-
+import { Helmet } from "react-helmet-async";
 
 const Tec = () => {
   return (
     <>
-  <Header/>
-  <MainContent   pageName="Technical Service"         />         
-    
+      <Helmet>
+        <title>technical service</title>
+        <meta name="description" content="discover technical service for you" />
+      </Helmet>
 
-      <Footer/>
-  </>
+      <Header />
+      <MainContent pageName="Technical Service" />
+
+      <Footer />
+    </>
   );
 };
 
